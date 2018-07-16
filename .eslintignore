@@ -1,0 +1,13 @@
+**/node_modules/*
+**/bower_components/*
+**/bin/*
+**/webpack*.js
+**/karma.*.js
+**/gulp*.js
+**/*.test.js
+**/*.js.map
+**/*.min.js
+**/serve-output/*
+**/legacy/**/*
+
+ 

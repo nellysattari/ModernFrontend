@@ -1,0 +1,3 @@
+{
+  "presets": ["env"] // you can use the env preset, which enables transforms for ES2015+
+}

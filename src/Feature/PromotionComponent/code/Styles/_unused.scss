@@ -1,0 +1,11 @@
+  // This piece of code never get compiled unless it is @include 
+  // EX:  Project\Challenger\code\styles\challenger-theme\components\_promotion.scss includes it
+     
+  
+
+  .promotion-light-theme.component.full-width-promotion {
+    p {
+        color: $red!important;
+    }
+    
+}

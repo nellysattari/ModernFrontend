@@ -1,0 +1,221 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+//
+// Color system: override them with challenger branding
+//
+$white:    #FFFFFF;//challenger primary colour
+
+$gray-50: #FAFAFA ; 
+$gray-100:#F5F5F5 ; 
+$gray-200: #EEEEEE ; 
+$gray-300: #E0E0E0 ; 
+$gray-400: #BDBDBD ; 
+$gray-500: #9E9E9E ; 
+$gray-600: #757575 ; 
+$gray-700: #616161 ; 
+$gray-800: #424242 ;
+$gray-900: #212121 ;
+$gray: $gray-500;    //challenger primary colour
+$black:    #000 ;
+$grays: () ;//challenger primary colour
+$grays: map-merge((
+  "50": $gray-50,  
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+), $grays);
+
+
+$blue:   #003B5C; //challenger SECONDARY_COLOURS
+$indigo:  #6610f2 ;
+$purple:  #6f42c1 ;
+$pink:    #e83e8c ;
+$red:     #D32F2F;// challenger RESERVED_COLOURS
+$orange:  #E46F1F ;// challenger RESERVED_COLOURS
+$yellow:  #ffc107 ;// challenger RESERVED_COLOURS
+$lime:  #B5BD00 ;// challenger Primary COLOURS
+$green: #48A23F;// challenger SECONDARY_COLOURS
+$teal:    #20c997 ;
+$cyan:    #17a2b8 ;
+ 
+$ChallengerProductColours:();
+$GALLBlue: #005776;//challenger product colour
+$GAGrey: #A6BBC8;//challenger product colour
+$careMaroon: #840B55;//challenger product colour
+$CARGBSBlue: #00205B;//challenger product colour
+$GIFGPFRed: #D50032;//challenger product colour
+$GPSGAPPurple: #595478;//challenger product colour
+$ChallengerProductColours: map-merge((
+    "GALLBlue ": $GALLBlue ,//guaranteed-annuity-lifetime
+    "GAGrey": $GAGrey,//guaranteed-annuity-complying
+    "careMaroon":$careMaroon,//care-plus
+    "CARGBS":$CARGBSBlue,
+    "GIFGPFRed":$GIFGPFRed, //Guaranteed-Income-Fund
+    "GPSGAPPurple":$GPSGAPPurple//Guaranteed-Personal-Superannuation
+    ), $ChallengerProductColours );
+
+
+
+$ChallengerLinkColours:();
+$light-blue-disabled: #7CADCA;//challenger other colour-Link
+ 
+$light-blue : #00629B;//challenger other colour-Link
+$dark-green: #006341;//challenger SECONDARY_COLOURS
+$ChallengerLinkColours: map-merge((
+  "light-blue": $light-blue,
+  "light-blue-disabled":$light-blue-disabled,
+  "grey-disbaled":$gray-400,//Challenger Absolute Return Global Bond Strategies Fund
+  "grey-active":$gray-900, 
+), $ChallengerLinkColours );
+
+ 
+
+$colors: () ;
+$colors: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray,
+  "gray-dark":  $gray-900,
+  "gray-light":  $gray-300
+
+ ), $colors);
+   
+// -------------------------------------------------------------------
+// Body for challenger
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $white  ;
+$body-color:                $gray-900  ;
+ 
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom:   1rem !default;
+    
+// Fonts should be for challenger
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      "Roboto", sans-serif;
+$font-family-base:            $font-family-sans-serif ;
+// stylelint-enable value-keyword-case
+
+
+$html-font-size-base:         10px; //  the browser default, typically `16px` we changed it to 10 to simplify the calc
+$font-size-base:              1rem ; // we dont use the browser default , we changed the default in reboot.scss file
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-medium:          500 ;//challenger
+
+$font-weight-base:            $font-weight-light ;//challenger
+$line-height-base:            0.67 !default;
+
+$h1-font-size:                $font-size-base * 7.2 ;//challenger
+$h2-font-size:                $font-size-base * 4.8 ;//challenger
+$h3-font-size:                $font-size-base * 4  ;//challenger
+$h4-font-size:                $font-size-base * 3.2 ;//challenger
+$h5-font-size:                $font-size-base * 2.4  ;//challenger
+ 
+
+$headings-margin-bottom:      ($spacer / 2) !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        500 !default;
+
+$h1-font-weight:               $font-weight-normal ;//challenger
+$h2-font-weight:               $font-weight-bold ;//challenger
+$h3-font-weight:               $font-weight-bold ;//challenger
+$h4-font-weight:               $font-weight-medium; //challenger
+$h5-font-weight:               $font-weight-bold  ; //challenger
+
+
+$headings-line-height:        1.2 !default;
+
+$h1-line-height:        0.9  ; //challenger
+$h2-line-height:        0.86 ;//challenger
+$h3-line-height:        0.83 ;//challenger
+$h4-line-height:        1 ;//challenger
+$h5-line-height:        0.75 ;//challenger
+$lead-line-height:      1.2 ;//challenger
+$disclaimer-line-height:      0.75 ;//challenger
+$timestamp-line-height: 0.88;//challenger
+$subhead-line-height:     0.83 ;//challenger
+ 
+$lead-font-size:              $font-size-base * 2.4  ;//challenger
+$lead-font-weight:            $font-weight-light ;
+
+
+$disclaimer-font-size:       ($font-size-base * 1.2)  ;//challenger
+$disclaimer-font-weight:     $font-weight-normal;
+
+
+$timestamp-font-size:        ($font-size-base * 1.4)  ;//challenger
+$timestamp-font-weight:      $font-weight-normal  ;//challenger
+
+$subhead-font-size:          ($font-size-base * 2)  ;//challenger
+$subhead-font-weight:         $font-weight-medium;//challenger
+
+  
+$promo-head-font-size:    $font-size-base * 3.6  ;//challenger
+$promo-head-font-weight:  $font-weight-light ;//challenger
+$promo-head-line-height:   0.9 ;//challenger
+
+ 
+  
+$promo-head-no-cta-font-size:    $font-size-base * 6.4 ;//challenger
+$promo-head-no-cta-font-weight:  $font-weight-normal ;//challenger
+
+
+$challenger-size-vars:();
+$challenger-size-vars: (
+  short: 200px,
+  medium: 536.250px,
+);
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         1.6rem ;
+$input-btn-padding-x:         3.2rem ;
+$btn-padding-y:               $input-btn-padding-y  ;
+$btn-padding-x:               $input-btn-padding-x ;
+
+
+$input-btn-margin-y:         2.4rem ;
+$input-btn-margin-x:         2.4rem ;
+$btn-margin-y:               $input-btn-margin-y  ;
+$btn-margin-x:               $input-btn-margin-x ;
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-font-weight:             $font-weight-medium;
+
+// Allows for customizing button radius independently from global border radius

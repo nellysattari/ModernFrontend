@@ -1,0 +1,167 @@
+.vs/
+*.suo
+*.user
+*.cache
+*.foldersync
+*.userprefs
+*DS_Store
+*.sln.ide
+_ReSharper.*
+
+/target
+/node_modules
+
+*.ncrunchproject
+*.ncrunchsolution
+.vscode
+nCrunchTemp*.*
+
+/temp
+
+
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Dd]ebug/
+[Rr]elease/
+x64/
+
+IconCache/
+T4RenderCache/
+BuiltFiles_*.txt
+specs/**/[Bb]in/
+
+
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets
+.nuget/
+artifacts/
+
+Site[c|C]ore/Data
+Site[c|C]ore/Databases
+Site[c|C]ore/Website/
+Site[c|C]ore/*.css
+
+PrecompiledWeb/
+Deployments/
+Prices and Perfromance/PricesAndPerformance.TDS.Master.Data/TDS.Master.Data_Debug.xml
+Legacy/Global/Cirrus.TDS.Master.Data/TDS.Master.Data_Debug.xml
+Legacy/AOL/AOL.TDS.Master.Data/TDS.Master.Data_Debug.xml
+_Deployments/
+Legacy/Build/libsassnetconsole/log.txt
+Site[c]Core/_DEV/TdsService.asmx
+Site[c]Core/_DEV/web.config
+
+#AOL
+Legacy/AOL/AOL.Web/Content/AOL/CSS/main.css
+Legacy/AOL/AOL.Web/Content/AOL/CSS/main.css.map
+Legacy/AOL/AOL.Web/Content/AOL/CSS/main.min.css
+Legacy/AOL/AOL.TDS.Core.Data/TDS.Core.Data_Debug.xml
+Legacy/AOL/AOL.TDS.Core.Data/TDS.Core.Data_Release.xml
+Legacy/AOL/AOL.TDS.Master.Content/TDS.Master.Content_Debug.xml
+Legacy/AOL/AOL.TDS.Master.Content/TDS.Master.Content_Release.xml
+Legacy/AOL/AOL.Web/Content/AOL/_gsdata_/
+Legacy/AOL/AOL.Web/Views/AOL/_gsdata_/
+
+
+# Accurium
+Legacy/Accurium/Accurium.Web/node_modules/
+Legacy/Accurium/Accurium.Web/Content/Accurium/CSS/*.css
+Legacy/Accurium/Accurium.Web/Content/Accurium/CSS/Members/Members.min.css
+Legacy/Accurium/Accurium.Web/Content/Accurium/CSS/Members/Members.css
+Legacy/Accurium/Accurium.Web/Content/Accurium/CSS/Members/Members.css.map
+Legacy/Accurium/Accurium.Web/Content/Accurium/CSS/Public/Accurium.min.css
+Legacy/Accurium/Accurium.Web/Content/Accurium/CSS/Public/Accurium.css
+Legacy/Accurium/Accurium.Web/Content/Accurium/CSS/Public/Accurium.css.map
+Legacy/Accurium/Accurium.Web/Content/Accurium/CSS/Vendor/Vendors.min.css
+Legacy/Accurium/Accurium.Web/Content/Accurium/CSS/Vendor/Vendors.css
+Legacy/Accurium/Accurium.Web/Content/Accurium/CSS/Vendor/Vendors.css.map
+
+Legacy/Accurium/TDS.Master.Content/sitecore/media library/Accurium
+!Legacy/Accurium/TDS.Master.Content/sitecore/media library/Accurium/Icons/
+!Legacy/Accurium/TDS.Master.Content/sitecore/media library/Accurium/accurium_logo.item
+!Legacy/Accurium/TDS.Master.Content/sitecore/media library/Accurium/Icons.item
+
+Legacy/Accurium/TDS.Master.Content/sitecore/content/Accurium/Home/Technical Hub/
+!Legacy/Accurium/TDS.Master.Content/sitecore/content/Accurium/Home/Technical Hub/Tags.item
+!Legacy/Accurium/TDS.Master.Content/sitecore/content/Accurium/Home/Technical Hub/Tags/
+
+Legacy/Accurium/TDS.Master.Content/sitecore/content/Accurium/Home/Blog/
+!Legacy/Accurium/TDS.Master.Content/sitecore/content/Accurium/Home/Blog/archive/
+!Legacy/Accurium/TDS.Master.Content/sitecore/content/Accurium/Home/Blog/tags/
+!Legacy/Accurium/TDS.Master.Content/sitecore/content/Accurium/Home/Blog/tags.item
+!Legacy/Accurium/TDS.Master.Content/sitecore/content/Accurium/Home/Blog/archive.item
+
+# Fidante
+# Accurium
+Legacy/Fidante/Fidante.Web/node_modules/
+Legacy/Fidante/Fidante.Web/Content/Fidante/CSS/main.css
+Legacy/Fidante/Fidante.Web/Content/Fidante/CSS/main.min.css
+Legacy/Fidante/Fidante.Web/Content/Fidante/CSS/main.css.map
+Legacy/Fidante/Fidante.Web/Content/Fidante/CSS/icons.css
+Legacy/Fidante/Fidante.Web/Content/Fidante/CSS/icons.min.css
+Legacy/Fidante/Fidante.Web/Content/Fidante/CSS/icons.css.map
+
+Legacy/AOL/AOL.Web/Content/IndustryFund/CSS/main.css
+Legacy/AOL/AOL.Web/Content/IndustryFund/CSS/main.css.map
+Legacy/AOL/AOL.Web/Content/IndustryFund/CSS/main.min.css
+Legacy/IndustryFund/IndustryFund.Web/Views/IndustryFund/_gsdata_/
+Legacy/IndustryFund/IndustryFund.Web/Content/IndustryFund/_gsdata_/
+
+Legacy/AOL/AOL.Web/Content/RetailFund/CSS/main.css
+Legacy/AOL/AOL.Web/Content/RetailFund/CSS/main.css.map
+Legacy/AOL/AOL.Web/Content/RetailFund/CSS/main.min.css
+
+Legacy/AOL/AOL.Web/Controllers/GlobalController_DANS_LOCAL.cs
+License.log
+
+Legacy/Build/_DEV/TdsService.asmx
+Legacy/Build/_DEV/web.config
+CheckTdsProjectsForIncorrectSyncSettings.ps1
+*.aiis
+Legacy//Global/Cirrus.UnitTests/license.xml
+Legacy//Tests/Global.UnitTests/license.xml
+Legacy//Tests/Fidante.UnitTests/license.xml
+Legacy//Tests/AOL.UnitTests/license.xml
+Legacy//Tests/Accurium.UnitTests/license.xml
+Legacy//Fidante/Fidante.UnitTests/license.xml
+Legacy//Tests/AOL.JavasScriptTestFixture/JsUnderTest
+Legacy//Tests/Fidante.JavasScriptTestFixture/JsUnderTest
+Legacy/Build/Sitecore-Environment-Refresh/log.txt
+Legacy/Build/Sitecore-Environment-Refresh/7D1F4170-056B-4621-B1F9-B60C2D07346C.txt
+Legacy/Fidante/Fidante.Web/Content/Fidante/CSS/main.css
+Legacy/Fidante/Fidante.Web/compilerconfig.json
+Legacy/Fidante/Fidante.Web/compilerconfig.json.defaults
+Legacy/Fidante/Fidante.Web/compilerconfig.json.defaults
+Legacy/Fidante/Fidante.Web/.CopySauce.json
+.CopySauce.json
+node_modules/
+Legacy/node_modules/
+Legacy/package-lock.json
+package-lock.json
+Legacy/Build/git-release-notes/cirrus-release-notes.html
+Legacy/Global/experience-extractor/src/TestResults
+
+################Challenger online
+jsconfig.json
+ 
+src/Foundation/Theming/code/styles/fonts/*.*
+
+src/Project/Challenger/code/serve-output/scripts/*.*
+src/Project/Challenger/code/serve-output/styles/*.*
+src/Project/Challenger/code/serve-output/views/Default.html
+
+####while we are using UI serving without IIs in the project we need to check in gulp.babel.js and includedFeatures inside the serve-output but once we get the components done we can ignore all serve-output folder
+/gulp-config.js.user.js
+/src/Project/Challenger/code/scripts/challenger.min.js.map
+/src/Project/Challenger/code/scripts/challenger.min.js

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700');
+
+// get enough detail from https://google.github.io/material-design-icons/ on icons
+
+// see the result here http://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700
+// $fonts: Roboto
+// 		Roboto-Italic
+// 		Roboto-Light
+// 		Roboto-LightItalic
+// 		Roboto-Medium
+// 		Roboto-MediumItalic
+// 		Roboto-Bold
+// 		Roboto-BoldItalic
+// 		Roboto-Thin
+// 		Roboto-ThinItalic
+// 		;
+
+// @each $font in $fonts {
+// 	@font-face {
+// 		font-family: $font;
+// 		src: url('../../../fonts/#{$font}.eot');
+// 		src: url('fonts/#{$font}.eot?#iefix') format('embedded-opentype'),
+// 		url('fonts/#{$font}.woff') format('woff'),
+// 		url('fonts/#{$font}.ttf') format('truetype');
+// 		font-weight: normal;
+// 		font-style: normal;

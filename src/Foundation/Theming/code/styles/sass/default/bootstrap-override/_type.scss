@@ -1,0 +1,111 @@
+// stylelint-disable declaration-no-important, selector-list-comma-newline-after
+//
+// Headings
+//
+//challenger
+// maybe need to add sass botstrap to import specific module
+h1,
+.h1 {
+    line-height: $h1-line-height;
+    font-weight: $h1-font-weight;
+}
+
+h2,
+.h2 {
+    line-height: $h2-line-height;
+    font-weight: $h2-font-weight;
+}
+
+h3,
+.h3 {
+    line-height: $h3-line-height;
+    font-weight: $h3-font-weight;
+}
+
+h4,
+.h4 {
+    line-height: $h4-line-height;
+    font-weight: $h4-font-weight;
+}
+
+h5,
+.h5 {
+    line-height: $h5-line-height;
+    font-weight: $h5-font-weight;
+}
+
+// !challenger
+h1,
+.h1 {
+    font-size: $h1-font-size;
+}
+
+h2,
+.h2 {
+    font-size: $h2-font-size;
+}
+
+h3,
+.h3 {
+    font-size: $h3-font-size;
+}
+
+h4,
+.h4 {
+    font-size: $h4-font-size;
+}
+
+h5,
+.h5 {
+    font-size: $h5-font-size;
+}
+
+h6,
+.h6 {
+    font-size: $h6-font-size;
+}
+
+.lead {
+    line-height: $lead-line-height; //challenger
+    // font-size: $lead-font-size;
+}
+
+//challenger class for dates
+.timestamp {
+    font-size: $timestamp-font-size;
+    font-weight: $timestamp-font-weight;
+    line-height: $timestamp-line-height;
+}
+
+.disclaimer {
+    font-size: $disclaimer-font-size;
+    font-weight: $disclaimer-font-weight;
+    line-height: $disclaimer-line-height;
+}
+
+.subhead {
+    font-size: $subhead-font-size;
+    font-weight: $subhead-font-weight;
+    line-height: $subhead-line-height;
+}
+
+.promo-heading {
+    font-size: $promo-head-font-size;
+    font-weight: $promo-head-font-weight;
+    line-height: $promo-head-line-height;
+    padding-bottom: 20px;
+}
+
+.promo-heading-no-cta {
+    font-size: $promo-head-no-cta-font-size;
+    font-weight: $promo-head-no-cta-font-weight;
+    line-height: $promo-head-line-height;
+    padding-bottom: 30px;
+}
+
+.promo-copy-text {
+  padding-bottom: 27px;
+}
+
+
+//!challenger class for dates

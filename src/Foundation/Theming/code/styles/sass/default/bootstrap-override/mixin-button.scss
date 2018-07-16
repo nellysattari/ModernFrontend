@@ -1,0 +1,28 @@
+ 
+//  not using this if we are not using the btn-primary
+ @each $themename,
+ $theme in $all-themes {
+     @each $color,
+     $value in $theme {
+         .btn-#{$color}-#{$themename} {
+             @include button-variant($value, $value);
+         }
+     }
+ }
+
+
+ @mixin button-size($padding-y, $padding-x,$font-size, $line-height, $border-radius,$margin-y, $margin-x) {
+    padding: $padding-y $padding-x;
+    margin: $margin-y, $margin-x;
+    font-size: $font-size;
+    line-height: $line-height;
+    // Manually declare to provide an override to the browser default
+    @if $enable-rounded {
+      border-radius: $border-radius;
+    } @else {
+      border-radius: 0;
+    }
+  }
+  
+
+  
