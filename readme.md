@@ -25,36 +25,7 @@ For development, run wither `gulp Serve-the-site` or `npm run serve` , which run
 ## Run the specific task
 Press CTR+SHIFT+B 
 pick the task you need and pick also the task runner (gulp) and the task will be run. you are goood to go.
-
-## Habitat compatibility
-There are something you need to know: 
-1- All the vendors like bootstrap, jquery ,... are existing in node_module. 
-2- Feature project: 
-  - we keep all features rendering `Html`, scripts and styles in this level.
-  - All `sass` files in this project are partial files. it means they should meet the conventions by having `_` at the begining. 
-  - Per feature inside the style folder, we have an `_index.scss` file which imports the other `sass` files. This file will be appearing in the Final `Sass`file so it is important to have this `_index.scss` otherwise the sass files would not get compiled in the feature. 
-3- Foundation project: 
-  - All the shared stuff including shared `Sass` or `Js` files are in this level. 
-  - Bootstrap styles are overridden at this project so we can override them per themes. 
-4- `Project` project :
-  - Each tenant site can have override the styles and scripts of each feature. However, they also can be used as ther are.
-7- `Script` transpiling and bundling:
-   We write the scripts in ES6 format to leverage ES6 features including using classes and import, export. 
-   So to make the scripts compatible with older browsers we need them to get transpiled to ES5 using (`Babel`)[https://pxpx.co.uk/blog/article/compiling-es6-with-gulp-babel]. 
-   
-8- `SASS` compilation:
-Sass compilation is going to run the gulp script inside the Project folder and invoking task called `compileCSSForDev`
-This task reads this file `project/styles/challenger-theme/challenger-theme.scss` and figure out all the dependencies. 
-Very important point is that we inject the sass files from `feature` project depends on what features we are using.
-
-There is a script file `includedFeatures.js` in which we add the features we are using inside an `feature array`;
-Then we expose the list of features and inside the gulp task all those imports statements will be injected to the entry sass file. 
-For this purpose we are using `gulp-inject`. 
-
-If it complains about node_sass version just rebuild it 
-```
-npm rebuild node-sass
-```
+ 
 ## Fonts and Icons
 We use google fonts and google material icons. 
 You can find them in   https://fonts.googleapis.com/ and https://material.io/tools/icons/?style=baseline
