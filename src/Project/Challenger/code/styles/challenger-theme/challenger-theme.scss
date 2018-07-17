@@ -1,6 +1,10 @@
 
 
-@import 'foundation/Theming/code/styles/sass/default/default';
+// @import 'foundation/Theming/code/styles/sass/default/default';
+
+
+
+// @import "../../../foundation/Theming/code/styles/sass/default/default";
 
 
 
@@ -11,7 +15,8 @@
 
 
 ///// bootstrap overrride components
-@import 'bootstrap-override/variables';
+@import 'bootstrap-override/index';
+// @import 'bootstrap-override/variables';
 @import 'components/index';
  
  

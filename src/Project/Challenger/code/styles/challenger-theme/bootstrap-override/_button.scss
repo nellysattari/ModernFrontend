@@ -1,0 +1,18 @@
+// Extended
+.cta-primary {
+    @extend .btn;
+    text-transform: uppercase;
+    @include button-size($btn-padding-y, $btn-padding-x, $font-size-base * 1.4, $btn-line-height, $btn-border-radius, $btn-margin-y, $btn-margin-x);
+    @include button-variant($light-blue, $light-blue, $white);  
+    color: $white;
+    
+   @include hover {
+        color:$light-blue-disabled;
+    }
+    
+    &.disabled,
+    &:disabled {
+        background-color: $light-blue-disabled;
+        color: $white;
+    }
+}

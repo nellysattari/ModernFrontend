@@ -1,0 +1,35 @@
+
+ 
+// @each $color, $value in $dark-theme-colors  {
+//     @include bg-variant(".bg-#{$color}#{"-dark-theme"}", $value);
+//   }
+  
+  
+ 
+// @each $color, $value in $light-theme-colors  {
+//     @include bg-variant(".bg-#{$color}#{"-light-theme"}", $value);
+//   }
+  
+
+@each $themename, $theme in $all-themes {
+    @each $color, $value in $theme  {
+      @include bg-variant(".bg-#{$color}-#{$themename}", $value);
+    }
+  }
+
+// stylelint-disable declaration-no-important
+
+@each $color, $value in $colors {
+  @include bg-variant(".bg-#{$color}", $value);
+}
+
+
+  // stylelint-disable declaration-no-important
+ 
+@include media-breakpoint-down(sm) {
+  .bg-sm-gray-light {
+    background-color: $gray-300 !important;
+  }
+} 
+
+ 

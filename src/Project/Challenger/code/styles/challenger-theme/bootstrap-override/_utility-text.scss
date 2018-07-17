@@ -1,0 +1,20 @@
+
+ 
+
+// @each $color, $value in $dark-theme-colors {
+//     @include text-emphasis-variant(".text-#{$color}#{"-dark-theme"}", $value);
+//   }
+  
+
+  
+// @each $color, $value in $light-theme-colors {
+//   @include text-emphasis-variant(".text-#{$color}#{"-light-theme"}", $value);
+// }
+
+
+
+@each $themename, $theme in $all-themes {
+  @each $color, $value in $theme  {
+    @include text-emphasis-variant(".text-#{$color}-#{$themename}", $value);
+  }
+}
