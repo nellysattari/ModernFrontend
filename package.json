@@ -10,6 +10,7 @@
         "jsCompile": "webpack   --config src/Project/challenger/code/webpack.config.babel.js  --watch",
         "jsCompile:prod": "webpack -p --config src/Project/challenger/code/webpack.config.babel.js ",
         "serve": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js serve",
+        "start": "npm run sassCompile && browser-sync start --config bs-config.js",
         "stylecheck": "eslint -c .eslintrc.json --ignore-path .eslintignore src/**/*.js",
         "stylecheckfix": "eslint -c .eslintrc.json --ignore-path .eslintignore src/**/*.js --fix",
         "debug": "node-nightly --inspect --debug-brk ./node_modules/webpack/bin/webpack.js  --config src/Project/challenger/code/webpack.config.babel.js"
