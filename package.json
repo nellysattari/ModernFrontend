@@ -4,17 +4,8 @@
     "description": "Frontend tools and concepts",
     "main": "gulpfile.babel.js",
     "scripts": {
-        "test": "jest ",
-        "sassCompile": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js compileCSSForDev",
-        "sassCompile:prod": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js compileCSSForProd",
-        "jsCompile": "webpack   --config src/Project/challenger/code/webpack.config.babel.js  --watch",
-        "jsCompile:prod": "webpack -p --config src/Project/challenger/code/webpack.config.babel.js ",
-        "serve": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js serve",
-        "start": "npm run sassCompile && browser-sync start --config bs-config.js",
-        "stylecheck": "eslint -c .eslintrc.json --ignore-path .eslintignore src/**/*.js",
-        "stylecheckfix": "eslint -c .eslintrc.json --ignore-path .eslintignore src/**/*.js --fix",
-        "debug": "node-nightly --inspect --debug-brk ./node_modules/webpack/bin/webpack.js  --config src/Project/challenger/code/webpack.config.babel.js"
-    },
+        "start": "browser-sync start --server"
+           },
     "repository": {
         "type": "git",
         "url": ""
@@ -36,70 +27,13 @@
             "email": "nellysattari@gmail.com",
             "url": ""
         }
-    ],
-    "bugs": {
-        "url": ""
-    },
-    "homepage": "",
-    "devDependencies": {
-        "autoprefixer": "^8.4.1",
-        "babel-core": "^6.26.3",
-        "babel-jest": "^23.2.0",
-        "babel-loader": "^7.1.4",
-        "babel-preset-env": "^1.7.0",
-        "browser-sync": "^2.24.1",
-         "eslint": "^5.0.1",
-        "glob": "^7.1.2",
-        "glob-all": "^3.1.0",
-        "gulp": "^3.9.1",
-        "gulp-eslint": "^4.0.2",
-        "gulp-foreach": "^0.1.0",
-        "gulp-html": "^0.5.0",
-        "gulp-html-import": "0.0.2",
-        "gulp-htmlmin": "^4.0.0",
-        "gulp-imagemin": "^4.1.0",
-        "gulp-inject": "^4.3.2",
-        "gulp-msbuild": "^0.5.5",
-        "gulp-notify": "^3.2.0",
-        "gulp-nuget-restore": "^0.6.0",
-        "gulp-postcss": "^7.0.1",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^4.0.1",
-        "gulp-sourcemaps": "^2.6.4",
-        "gulp-uglify": "^3.0.0",
-        "gulp-xunit-runner": "^0.1.1",
-        "jest-cli": "^23.2.0",
-        "material-design-icons": "^3.0.1",
-        "path": "^0.12.7",
-        "pre-commit": "^1.2.2",
-        "run-sequence": "^2.2.1",
-        "sass-loader": "^7.0.1",
-        "ts-loader": "^4.3.0",
-        "uglifyjs-webpack-plugin": "^1.2.7",
-        "webpack": "^4.8.3",
-        "webpack-cli": "^2.1.3",
-        "webpack-validator": "^3.0.1",
-        "xml2js": "^0.4.19"
+    ] ,
+     "devDependencies": {
+        "browser-sync": "^2.24.1"
     },
     "dependencies": {
         "bootstrap": "4.1.1",
         "jquery": "3.3.1",
         "popper.js": "1.14.3"
-    },
-    "jest": {
-        "testEnvironment": "node",
-        "testMatch": [
-            "**/src/**/*.test.js"
-        ],
-        "testPathIgnorePatterns": [
-            "/tds/"
-        ],
-        "moduleFileExtensions": [
-            "ts",
-            "js"
-        ]
-    },
-    "pre-commit": [
-        "stylecheck"
-    ]
+    } 
 }
