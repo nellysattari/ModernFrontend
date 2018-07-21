@@ -4,17 +4,9 @@
     "description": "Frontend tools and concepts",
     "main": "gulpfile.babel.js",
     "scripts": {
-        "test": "jest ",
-        "sassCompile": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js compileCSSForDev",
-        "sassCompile:prod": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js compileCSSForProd",
+        "sassCompile": "gulp --gulpfile src/Project/code/gulpfile.babel.js compileCSSForDev",
         "sass": "sass src/Project/Challenger/code/styles/challenger-theme/challenger-theme.scss src/Project/Challenger/code/styles/challenger-theme.css ",
-       
-        "jsCompile": "webpack   --config src/Project/challenger/code/webpack.config.babel.js  --watch",
-        "jsCompile:prod": "webpack -p --config src/Project/challenger/code/webpack.config.babel.js ",
-        "serve": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js serve",
-        "stylecheck": "eslint -c .eslintrc.json --ignore-path .eslintignore src/**/*.js",
-        "stylecheckfix": "eslint -c .eslintrc.json --ignore-path .eslintignore src/**/*.js --fix",
-        "debug": "node-nightly --inspect --debug-brk ./node_modules/webpack/bin/webpack.js  --config src/Project/challenger/code/webpack.config.babel.js"
+        "serve": "gulp --gulpfile src/Project/code/gulpfile.babel.js serve"
     },
     "repository": {
         "type": "git",
@@ -86,21 +78,5 @@
         "bootstrap": "4.1.1",
         "jquery": "3.3.1",
         "popper.js": "1.14.3"
-    },
-    "jest": {
-        "testEnvironment": "node",
-        "testMatch": [
-            "**/src/**/*.test.js"
-        ],
-        "testPathIgnorePatterns": [
-            "/tds/"
-        ],
-        "moduleFileExtensions": [
-            "ts",
-            "js"
-        ]
-    },
-    "pre-commit": [
-        "stylecheck"
-    ]
+    }
 }
