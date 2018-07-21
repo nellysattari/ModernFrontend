@@ -64,7 +64,6 @@
         "jest-cli": "^23.2.0",
         "material-design-icons": "^3.0.1",
         "path": "^0.12.7",
-        "pre-commit": "^1.2.2",
         "run-sequence": "^2.2.1",
         "sass-loader": "^7.0.1",
         "ts-loader": "^4.3.0",
@@ -79,6 +78,5 @@
         "bootstrap": "4.1.1",
         "jquery": "3.3.1",
         "popper.js": "1.14.3"
-      
     }
 }
