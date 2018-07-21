@@ -58,7 +58,8 @@ gulp.task('importHtml', function () {
 //server: Use the built-in static server for basic HTML/JS/CSS websites. Basedir is just for // Multiple base directories server: ["app", "dist"]
 // baseDir for serving static files is it is based on https://github.com/expressjs/serve-static. The file to serve will be determined by combining req.url with the provided root directory
 
-gulp.task(`serve`, [`compileCSSForDev`,  'importHtml'], function () {
+// gulp.task(`serve`, [`compileCSSForDev`,  'importHtml'], function () {
+gulp.task(`serve`, [ 'importHtml'], function () {
         browserSync({
             notify: true,
             port: 9000,

@@ -5,7 +5,7 @@
     "main": "gulpfile.babel.js",
     "scripts": {
         "sassCompile": "gulp --gulpfile src/Project/code/gulpfile.babel.js compileCSSForDev",
-        "sass": "sass src/Project/Challenger/code/styles/challenger-theme/challenger-theme.scss src/Project/Challenger/code/styles/challenger-theme.css ",
+        "sass": "sass src/Project/code/styles/default/default.scss src/Project/code/styles/main.css ",
         "serve": "gulp --gulpfile src/Project/code/gulpfile.babel.js serve"
     },
     "repository": {
@@ -72,11 +72,13 @@
         "webpack": "^4.8.3",
         "webpack-cli": "^2.1.3",
         "webpack-validator": "^3.0.1",
-        "xml2js": "^0.4.19"
+        "xml2js": "^0.4.19",
+        "sass": "^1.10.0"
     },
     "dependencies": {
         "bootstrap": "4.1.1",
         "jquery": "3.3.1",
         "popper.js": "1.14.3"
+      
     }
 }
