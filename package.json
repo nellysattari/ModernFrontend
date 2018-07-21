@@ -42,12 +42,13 @@
     "homepage": "",
     "devDependencies": {
         "autoprefixer": "^8.4.1",
+        "babel-cli": "^6.26.0",
         "babel-core": "^6.26.3",
         "babel-jest": "^23.2.0",
         "babel-loader": "^7.1.4",
         "babel-preset-env": "^1.7.0",
         "browser-sync": "^2.24.1",
-         "eslint": "^5.0.1",
+        "eslint": "^5.0.1",
         "glob": "^7.1.2",
         "glob-all": "^3.1.0",
         "gulp": "^3.9.1",
@@ -83,7 +84,8 @@
     "dependencies": {
         "bootstrap": "4.1.1",
         "jquery": "3.3.1",
-        "popper.js": "1.14.3"
+        "popper.js": "1.14.3",
+        "requirejs": "^2.3.5"
     },
     "jest": {
         "testEnvironment": "node",
