@@ -33,10 +33,10 @@ module.exports = {
         baseDir: [
             `src/Project/Challenger/code/Views/Layouts/`,
             `src/Project/Challenger/code/images`,
-            `src/Project/Challenger/code/Scripts`,
-            `src/Project/Challenger/code/Styles`
+            `src/Project/Challenger/code/scripts`,
+            `src/Project/Challenger/code/styles`
         ],
-        index: "Default.html"
+        index: "index.html"
     },
     
     "proxy": false,
