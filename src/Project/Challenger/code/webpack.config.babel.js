@@ -18,9 +18,12 @@ allScriptArrays.push(path.join(__dirname, '..', '..', '..', 'Project', 'Challeng
 allScriptArrays.push(path.join(__dirname, '..', '..', '..', 'Foundation', 'Theming', 'code', 'scripts', '**', '*.js'));
 let ExclusionList = [];
 ExclusionList.push(path.join(__dirname, '..', '..', '..', '**', '*.min.js'));
-module.exports = () => {
-    console.log("dir:", __dirname);
-    return {
+
+   
+module.exports = (env) => {
+    let  mode=(env && env.mode) ? env.mode: "development";
+
+    let config= {
         entry: globAll.sync(allScriptArrays,{ ignore: ExclusionList }),
         output: {
             path: path.resolve(__dirname, 'scripts'),
@@ -32,10 +35,8 @@ module.exports = () => {
                 $: "jquery",
                 jQuery: "jquery",
                 "window.jQuery": "jquery"
-            }),
-            new UglifyJSPlugin({
-                sourceMap: false
             })
+           
         ],
         resolve: {
             alias: {
@@ -57,4 +58,10 @@ module.exports = () => {
         }
 
     }
+    if (mode!=='development'){ 
+        config.plugins.push( new UglifyJSPlugin({
+            sourceMap: false
+        }))
+    };
+    return config;
 };

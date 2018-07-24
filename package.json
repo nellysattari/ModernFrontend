@@ -8,7 +8,7 @@
         "sassCompile": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js compileCSSForDev",
         "sassCompile:prod": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js compileCSSForProd",
         "jsCompile": "webpack   --config src/Project/challenger/code/webpack.config.babel.js  --watch",
-        "jsCompile:prod": "webpack -p --config src/Project/challenger/code/webpack.config.babel.js ",
+        "jsCompile:prod": "webpack -p --env.mode=production --config src/Project/challenger/code/webpack.config.babel.js ",
         "serve": "gulp --gulpfile src/Project/Challenger/code/gulpfile.babel.js serve",
         "start": "npm run sassCompile && browser-sync start --config bs-config.js",
         "stylecheck": "eslint -c .eslintrc.json --ignore-path .eslintignore src/**/*.js",
