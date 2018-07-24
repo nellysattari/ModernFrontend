@@ -5,7 +5,7 @@
     "main": "gulpfile.babel.js",
     "scripts": {
         "start": "browser-sync start --server ",
-        "compile":"babel  ./index.js  --out-dir ./scripts"
+        "compile": "babel  ./index.js  --out-dir ./scripts"
     },
     "repository": {
         "type": "git",
