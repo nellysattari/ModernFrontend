@@ -8,16 +8,19 @@ import globAll from 'glob-all';
 
 
 //---------------Identifying the scripts in the feature
-import { IncludedFeatures } from './includedFeatures.js';
-let includedFeatures = new IncludedFeatures();
-const featuresScriptArrays = includedFeatures.ScriptList();
+// import { IncludedFeatures } from './includedFeatures.js';
+// let includedFeatures = new IncludedFeatures();
+// const featuresScriptArrays = includedFeatures.ScriptList();
 
 // ---------------Add more scripts in from 
-let allScriptArrays = featuresScriptArrays.slice();
+// let allScriptArrays = featuresScriptArrays.slice();
+let allScriptArrays =[];
+allScriptArrays.push(path.join(__dirname, '..', '..', '..', 'Feature', 'Challenger', 'code', 'scripts', '**', '*.js'));
 allScriptArrays.push(path.join(__dirname, '..', '..', '..', 'Project', 'Challenger', 'code', 'scripts', '**', '*.js'));
 allScriptArrays.push(path.join(__dirname, '..', '..', '..', 'Foundation', 'Theming', 'code', 'scripts', '**', '*.js'));
 let ExclusionList = [];
 ExclusionList.push(path.join(__dirname, '..', '..', '..', '**', '*.min.js'));
+ExclusionList.push(path.join(__dirname, '..', '..', '..', '**', '*.test.js'));
 
    
 module.exports = (env) => {
